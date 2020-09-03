@@ -2,8 +2,9 @@ package com.soulrebel.hotel.reactivespring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = MongoDataAutoConfiguration.class)
 public class ReactivespringApplication {
 
     public static void main(String[] args) {
